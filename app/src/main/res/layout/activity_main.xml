@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/edit_sousuo"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="搜索" />
+        <Button
+            android:id="@+id/but_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="搜索"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_lishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索历史"
+        />
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tag_sousuo"
+            app:max_select="1"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:padding="16dp"
+            >
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+        <TextView
+            android:id="@+id/remen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门搜索"
+            />
+    <com.fynn.fluidlayout.FluidLayout
+        android:id="@+id/liushi"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+
+        ></com.fynn.fluidlayout.FluidLayout>
+
+    <Button
+        android:id="@+id/but_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除"
+        />
+
+</LinearLayout>
